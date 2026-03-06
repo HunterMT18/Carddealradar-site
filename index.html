@@ -7,6 +7,24 @@
 
 <style>
 
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0b0b0b;
+color:white;
+line-height:1.6;
+}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
 .logo-container{
 position:relative;
 width:180px;
@@ -29,7 +47,6 @@ width:180px;
 height:180px;
 border-radius:50%;
 border:2px solid #39FF14;
-animation:spinRadar 6s linear infinite;
 opacity:0.35;
 }
 
@@ -42,37 +59,88 @@ background:#39FF14;
 left:50%;
 top:50%;
 transform-origin:bottom;
-animation:sweepRadar 4s linear infinite;
+animation:sweep 4s linear infinite;
 }
 
-@keyframes spinRadar{
+@keyframes sweep{
 0%{transform:rotate(0deg);}
 100%{transform:rotate(360deg);}
 }
 
-@keyframes sweepRadar{
-0%{transform:rotate(0deg);}
-100%{transform:rotate(360deg);}
+h1{
+font-size:48px;
+margin:10px 0;
 }
+
+.tagline{
+color:#39FF14;
+font-size:20px;
+margin-bottom:25px;
+}
+
+.button{
+background:#39FF14;
+color:black;
+padding:14px 28px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.button:hover{
+background:#2ed40f;
+}
+
+.section{
+max-width:900px;
+margin:auto;
+padding:60px 20px;
+}
+
+.section h2{
+color:#39FF14;
+margin-bottom:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#111;
+padding:25px;
+border-radius:8px;
+border:1px solid #222;
+}
+
+.footer{
+background:#000;
+padding:30px;
+text-align:center;
+border-top:2px solid #39FF14;
+color:#bbb;
+}
+
 </style>
+
 </head>
 
 <body>
 
 <div class="hero">
 
-<div class="radar"></div>
-
 <div class="logo-container">
-    <div class="radar-circle"></div>
-    <img src="logo.png.png" class="logo">
+<div class="radar-circle"></div>
+<img src="logo.png.png" class="logo">
 </div>
 
 <h1>Card Deal Radar</h1>
 
 <p class="tagline">Scanning The Hobby For Hidden Deals</p>
 
-<a class="button" href="YOUR_DISCORD_LINK">Join the Community</a>
+<a class="button" href="https://discord.gg/6chgn7Dm">Join the Community</a>
 
 </div>
 
@@ -82,7 +150,7 @@ animation:sweepRadar 4s linear infinite;
 
 <p>
 Card Deal Radar is a deal discovery service built for trading card collectors.
-Our system scans the hobby to identify undervalued listings, hidden auctions,
+Our radar scans the hobby to identify undervalued listings, hidden auctions,
 bulk lots, and card supply deals across online marketplaces.
 </p>
 
@@ -145,7 +213,7 @@ Card Deal Radar operates through a private Discord community where members can
 view deal alerts, discuss opportunities, and share successful finds with other collectors.
 </p>
 
-<a class="button" href="YOUR_DISCORD_LINK">Join Discord</a>
+<a class="button" href="https://discord.gg/6chgn7Dm">Join Discord</a>
 
 </div>
 
@@ -170,13 +238,13 @@ for transactions conducted on external marketplaces.
 <h2>Subscription Information</h2>
 
 <p>
-Some areas of the Card Deal Radar community require a paid subscription for access to
-premium deal alerts and early opportunities.
+Some areas of the Card Deal Radar community require a paid subscription
+to access premium deal alerts and early opportunities.
 </p>
 
 <p>
-Subscriptions may be cancelled at any time. Refunds are not provided once a billing period begins.
-Members retain access through the end of the paid period.
+Subscriptions may be cancelled at any time. Refunds are not provided once a
+billing period begins. Members retain access through the end of the paid period.
 </p>
 
 </div>
