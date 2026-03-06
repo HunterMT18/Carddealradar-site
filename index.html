@@ -6,101 +6,157 @@
 <title>Card Deal Radar</title>
 
 <style>
+
 body{
-font-family: Arial, Helvetica, sans-serif;
 margin:0;
+font-family:Arial, Helvetica, sans-serif;
 background:#0b0b0b;
-color:#ffffff;
+color:white;
 line-height:1.6;
 }
 
 header{
-background:#000;
-padding:40px;
 text-align:center;
+padding:60px 20px;
+background:linear-gradient(180deg,#000000,#0b0b0b);
 border-bottom:2px solid #39FF14;
 }
 
-header h1{
-font-size:42px;
-margin-bottom:10px;
+.logo{
+width:140px;
+margin-bottom:20px;
+}
+
+h1{
+font-size:44px;
+margin:10px 0;
 }
 
 .tagline{
 color:#39FF14;
 font-size:20px;
+margin-bottom:25px;
+}
+
+.button{
+display:inline-block;
+background:#39FF14;
+color:#000;
+padding:14px 28px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.button:hover{
+background:#2dd60f;
 }
 
 section{
 max-width:900px;
 margin:auto;
-padding:40px 20px;
+padding:50px 20px;
 }
 
 h2{
 color:#39FF14;
+margin-bottom:15px;
 }
 
-.button{
-display:inline-block;
-padding:14px 28px;
-margin-top:20px;
-background:#39FF14;
-color:#000;
-text-decoration:none;
-font-weight:bold;
-border-radius:6px;
+.features{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.feature-box{
+background:#111;
+padding:20px;
+border-radius:8px;
+border:1px solid #222;
+}
+
+ul{
+margin-left:20px;
 }
 
 .footer{
 background:#000;
 padding:30px;
 text-align:center;
-font-size:14px;
-color:#ccc;
 border-top:2px solid #39FF14;
+font-size:14px;
+color:#bbb;
 }
 
-ul{
-margin-left:20px;
+@media(max-width:700px){
+.features{
+grid-template-columns:1fr;
 }
+}
+
 </style>
+
 </head>
 
 <body>
 
 <header>
+
+<img src="logo.png" class="logo">
+
 <h1>Card Deal Radar</h1>
+
 <p class="tagline">Scanning The Hobby For Hidden Deals</p>
-<a class="button" href="YOUR_DISCORD_LINK_HERE">Join the Discord</a>
+
+<a class="button" href="YOUR_DISCORD_LINK">Join the Community</a>
+
 </header>
 
 <section>
 
 <h2>About Card Deal Radar</h2>
+
 <p>
 Card Deal Radar is a deal discovery service built for trading card collectors.
-Our system scans the hobby to identify potentially undervalued listings, hidden auctions, bulk lots, and card supply deals across online marketplaces.
+Our radar scans marketplaces to identify undervalued listings, hidden auctions,
+bulk lots, and card supply deals across the trading card hobby.
 </p>
 
 <p>
-Members receive alerts when interesting opportunities are found so they can investigate deals before the broader market notices them.
+Members receive alerts when opportunities are discovered so they can review
+potential deals before the broader market notices them.
 </p>
 
 </section>
 
 <section>
 
-<h2>What We Look For</h2>
+<h2>What Our Radar Looks For</h2>
 
-<ul>
-<li>Undervalued trading card listings</li>
-<li>Auctions ending soon below market value</li>
-<li>Bulk card lots with potential resale value</li>
-<li>Potential grading candidates</li>
-<li>Supply deals on sleeves, top loaders, and card storage</li>
-<li>Deals across sports cards, Pokémon, trading card games, and other collectibles</li>
-</ul>
+<div class="features">
+
+<div class="feature-box">
+<h3>Hidden Listings</h3>
+<p>Mispriced or overlooked cards that may be undervalued compared to recent sales.</p>
+</div>
+
+<div class="feature-box">
+<h3>Auction Opportunities</h3>
+<p>Auctions ending soon that may still be priced below market value.</p>
+</div>
+
+<div class="feature-box">
+<h3>Bulk Lots</h3>
+<p>Large card lots that may contain cards worth significantly more individually.</p>
+</div>
+
+<div class="feature-box">
+<h3>Supply Deals</h3>
+<p>Discounts on card supplies like sleeves, top loaders, storage boxes, and holders.</p>
+</div>
+
+</div>
 
 </section>
 
@@ -109,27 +165,24 @@ Members receive alerts when interesting opportunities are found so they can inve
 <h2>How It Works</h2>
 
 <ol>
-<li>Our radar scans marketplaces for interesting listings.</li>
-<li>Potential deals are reviewed.</li>
-<li>Alerts are posted in the Card Deal Radar Discord community.</li>
-<li>Members can review the listing and decide if the opportunity is worth pursuing.</li>
+<li>Our radar scans public marketplaces for interesting listings.</li>
+<li>Potential deals are reviewed before alerts are posted.</li>
+<li>Alerts are shared with members in the Card Deal Radar community.</li>
+<li>Members review the listing and decide whether the opportunity is worth pursuing.</li>
 </ol>
 
 </section>
 
 <section>
 
-<h2>Community</h2>
+<h2>Join the Community</h2>
 
 <p>
-Card Deal Radar operates primarily through a private Discord community where members can view deal alerts, discuss opportunities, and share successful finds with other collectors.
+Card Deal Radar operates through a private Discord community where members
+can view deal alerts, discuss opportunities, and share successful finds.
 </p>
 
-<p>
-If you enjoy hunting for hidden deals in the hobby, you're welcome to join the community.
-</p>
-
-<a class="button" href="YOUR_DISCORD_LINK_HERE">Join the Community</a>
+<a class="button" href="https://discord.com/channels/1479212616802107526/1479229688764170252">Join Discord</a>
 
 </section>
 
@@ -138,11 +191,13 @@ If you enjoy hunting for hidden deals in the hobby, you're welcome to join the c
 <h2>Disclaimer</h2>
 
 <p>
-Card Deal Radar shares listings that appear interesting based on publicly available information. We do not own, sell, or verify the items posted and cannot guarantee the authenticity, condition, or legitimacy of any listing.
+Card Deal Radar shares listings that appear interesting based on publicly available
+information. We do not own, sell, or verify the items listed on third-party marketplaces.
 </p>
 
 <p>
-All purchases are made at your own discretion and risk. Card Deal Radar is not responsible for transactions conducted on third-party marketplaces.
+All purchases are made at your own discretion and risk. Card Deal Radar is not responsible
+for transactions conducted on external marketplaces or any outcomes related to those purchases.
 </p>
 
 </section>
@@ -152,11 +207,13 @@ All purchases are made at your own discretion and risk. Card Deal Radar is not r
 <h2>Subscription Information</h2>
 
 <p>
-Some areas of the Card Deal Radar community may require a paid subscription for access to premium alerts and early deal notifications.
+Some areas of the Card Deal Radar community may require a paid subscription
+to access premium deal alerts and early opportunities.
 </p>
 
 <p>
-Subscriptions may be cancelled at any time. Refunds are not provided once a billing period begins. Members will retain access for the remainder of the paid subscription period.
+Subscriptions may be cancelled at any time. Refunds are not provided once a
+billing period begins. Members retain access through the end of the paid period.
 </p>
 
 </section>
